@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+footer.rodape a:hover{
+    color: black;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    ". . . ."
+    ". aside main ."
+    ". aside main ."
+    ". . . ."
+    "footer footer footer footer"
+    ;
+}
+
+.container2{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    ". . . . . . "
+    ". . . . . . "
+    ". . . dmain dmain ."
+    ". . .  dmain dmain ."
+    "footer footer footer footer footer footer"
+    ;
+}
+
+.container3{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    ". . . . . . "
+    ". . . . . . "
+    ". . . dmain2 dmain2 ."
+    ". . .  dmain2 dmain2 ."
+    "footer footer footer footer footer footer"
+    ;
+}
+
+.imglogin{
+    position: absolute;
+    width: 10rem;
+    margin-left: 68rem;
+    margin-top: 2.5rem;
+    border: 3px solid #0097b27a;
+    border-radius: 50%;
+    background-color: #141414;
+}
+
+.imglogin2{
+    position: absolute;
+    width: 10rem;
+    margin-left: 68rem;
+    border: 3px solid #0097b27a;
+    border-radius: 50%;
+    background-color: #141414;
+}
+
+div.main{
+    grid-area: dmain;
+}
+
+div.main2{
+    grid-area: dmain2;
+}
+
+aside{
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+aside img {
+    width: 400px;
+    height: 400px;
+    margin-left: 8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+aside h1{
+    margin-left: 16rem;
+    font-size: 6rem;
+    color: #0097b27a;
+    line-height: 7rem;
+}
+
+aside h1 span{
+    font-size: 6rem;
+    color: white;
+}
+
+main h2, p{
+    color: white;
+}
+
+main {
+    border: 1px solid #afa6a6;
+    border-radius: 1.2rem;
+    width: 60rem;
+    height: 50rem;
+    padding: 1rem;
+}
+
+div.main{
+    border: 1px solid #afa6a6;
+    border-radius: 1.2rem;
+    width: 60rem;
+    height: 50rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 4rem;
+    color: white;
+}
+
+div.main2{
+    border: 1px solid #afa6a6;
+    border-radius: 1.2rem;
+    width: 60rem;
+    height: 60rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 4rem;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+option{
+    font-size: 1.5rem;
+}
+
+div.label{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 4rem;
+}
+
+div.label2{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3.5rem;
+    margin-top: 1rem;
+}
+
+div.label input{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: 40rem;
+    height: 2.5rem;
+    text-align: center;
+    background-color: #e8edee7a;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+div.label2 input{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: 40rem;
+    height: 2.5rem;
+    text-align: center;
+    background-color: #e8edee7a;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+div.label2 select{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    width: 40rem;
+    height: 2.5rem;
+    text-align: center;
+    background-color: #e8edee7a;
+    border: none;
+    border-radius: 1.2rem;
+}
+
+div.button{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 4rem;
+}
+
+div.button a:first-child{
+    width: 20rem;
+    font-size: 2.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 1.2rem;
+    background-color: #0097b27a;
+    color: white;
+    margin-top: 3rem;
+    margin-left: 20rem;
+    transition: background-color 0.5s;
+}
+
+div.button a:last-child{
+    width: 35rem;
+    font-size: 2rem;
+    text-align: center;
+    border: none;
+    border-radius: 1.2rem;
+    background-color: #e8edee7a;
+    margin-top: 3rem;
+    margin-left: 12.2rem;
+    line-height: 3rem;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+button a{
+    color: #0097b27a;
+    font-size: 1.8rem;
+}
+
+h2{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 4rem;
+}
+
+h2 span{
+    font-size: 4rem;
+    color: #0097b27a;
+}
+
+main .login{
+    display: flex;
+    flex-flow: column wrap;
+    font-size: 4rem;
+}
+
+main .login a:first-child{
+    background-color: #e8edee7a;
+    color: white;
+    border-radius: 1.2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    transition: background-color 0.5s;
+}
+
+main .login a:last-child {
+    background-color: #0097b27a;
+    color: white;
+    border-radius: 1.2rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+
+main .login a:hover:first-child, div.button a:hover:first-child{
+    background-color: #BEE7DC;
+    background-position: 0 0;
+    color: black;
+}
+
+main .login a:hover:last-child, div.button a:hover:last-child{
+    background-color: #BEE7DC;
+    background-position: 0 0;
+    color: black;
+}
+
+main p{
+    margin-top: 17rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+div.main p{
+    margin-top: 9.2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+div.main2 p{
+    margin-top: 7.2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+footer a{
+    font-size: 2.5rem;
+    padding: 3rem;
+    color: white;
+}
+
+footer.rodape{
+    background-color: #0097b27a;
+    text-align: right;
+}

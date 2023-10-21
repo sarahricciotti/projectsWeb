@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* :root{
+    font-size: 90.5%;
+} */
+
+body{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2{
+    text-transform: uppercase;
+    /* lowercase -> td minusculo | uppercase -> td maiusculo | capitalize -> 1º maiuscula */
+    text-align: center;
+    font-family: 'Comic Neue', cursiva;
+    font-size: 5.6rem;
+    /* rem o usuário pode mudar o tamanho, diferente de px ou em */
+    /* display: none -> some com todo o elemento */
+    /* visibility: hidden; -> some com o elemento, mas continua ocupando o espaço*/
+    /* opacity: .4; -> opacidade */
+}
+
+p{
+    text-align: justify;
+    /* ajusta o texto */
+    text-indent: 50px;
+    /* indentação/Tab */
+}
+
+nav{
+    background-color: #0c4684;
+    height: 30px;
+    width: 80%;
+    position: fixed;
+    /* fixa a barra de navegação */
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+}
+
+a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+}
+
+main{
+    padding-top: 30px;
+}
+
+.fundo{
+    height: 50vw;
+    /* vw ->  é uma unidade de medida relativa à largura da janela
+    px -> é uma unidade de medida fixa em pixels */
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1507963901243-ebfaecd5f2f4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1204&q=80);
+    background-size: contain;
+    /* cover -> dimensiona a imagem para cobrir completamente o elemento, sem deixar espaço vazio, mesmo que partes da imagem sejam cortadas.
+    contain -> dimensiona a imagem para caber dentro do elemento, mantendo a proporção original e deixando espaço em branco, se necessário*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* table, td, th{
+    border: 1px solid #0c4684;
+    border-collapse: collapse;
+    padding: 5px;
+    display: none -> some com a tabela
+}
+
+table tr:first-child{
+    /* apenas 1ª linha
+    background-color: #0c4684;
+    color: white;
+}
+
+table tr:nth-child(2n + 2){
+    pode-se definir regra de linhas
+    background-color: #afcbe9;
+}
+
+table tr:nth-child(2n + 3){
+    pode-se definir regra de linhas
+    background-color: #bababa;
+} */
+
+.boxes{
+    position: relative;
+    display: flex;
+    /* Define que o elemento e seus filhos devem ser exibidos como um container flexível. */
+    flex-wrap: wrap;
+    /* Define que os elementos filhos dentro do container flexível podem ser quebrados em várias linhas, se necessário. Quando o espaço disponível não for suficiente para acomodar todos os elementos em uma única linha, eles serão distribuídos em várias linhas para garantir que todos os elementos sejam exibidos */
+}
+
+.contact-list h3{
+    top: 30px;
+    position: sticky;
+    /* fixa o cabeçalho/titulo da lista/texto na barra de rolagem até o termino */
+    background-color: #bababa;
+    color: #0c4684;
+    font-weight: bold;
+    width: 20%;
+}
+
+.box{
+    height: 100px;
+    width: 200px;
+    border: 5px solid #0c4684;
+    display: inline-block;
+    background-color: #afcbe9;
+    border-radius: 10%;
+    padding: 5px;
+    position: static;
+    /* Define que o elemento deve ser posicionado de acordo com o fluxo normal do documento. Significa que o elemento não será afetado por outras propriedades de posicionamento, como top, right, bottom e left */
+    flex: 30%;
+    /* define que o elemento deve ocupar 30% do espaço disponível no container flexível. */
+    margin: 10px;
+}
+
+.box:nth-child(1), .box:nth-child(2){
+}
+
+.box:nth-child(3){
+}
+
+.boxes-flex{
+    height: calc(100vh - 14rem);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content: center;
+    gap: 0rem 1rem;
+    flex: 1;
+}
+
+.b-flex{
+    height: 80px;
+    width: 30px;
+    border: 5px solid #0c4684;
+    display: inline-block;
+    background-color: #afcbe9;
+    border-radius: 10%;
+    padding: 15px;
+    position: relative;
+    flex: 30%;
+    margin: 15px;
+    flex-basis: calc(20% - 5rem);
+    /* Define o tamanho inicial do elemento como 20% do espaço disponível, subtraindo 5 rem de largura */
+    display: flex;
+    gap: 0rem 2rem;
+    /* Define o espaçamento horizontal e vertical entre os elementos filhos dentro do container flexível, sendo 0 rem no eixo vertical e 2 rem no eixo horizontal. */
+    justify-content: center;
+    /* Define o alinhamento horizontal do conteúdo dentro do container flexível como centralizado. */
+    align-content: center;
+}
+
+.b-flex:nth-child(1){
+    order: 1;
+}
+
+.b-grid{
+    font-size: 2rem;
+    border: 5px solid #0c4684;
+    background-color: #afcbe9;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.boxes-grid{
+    height: calc(50vh);
+    position: relative;
+    display: grid;
+    /* Especifica que o contêiner deve ser exibido como uma grade */
+    gap: 1rem 1rem;
+    justify-content: flex-start;
+    /* Alinha os itens da grade ao longo do eixo horizontal (eixo principal) no início do contêiner. */
+    grid-template-columns: 3fr 2fr 1fr;
+    /* Define o número e a distribuição da largura das colunas na grade. Neste caso, existem três colunas: a primeira coluna ocupa 3 partes, a segunda coluna ocupa 2 partes e a terceira coluna ocupa 1 parte */
+    grid-template-rows: 50px 1fr 3fr;
+    /* Define o número e a distribuição da altura das linhas na grade. Neste caso, existem três linhas: a primeira linha tem uma altura fixa de 50 pixels, a segunda linha ocupa uma parte flexível da grade (1fr) e a terceira linha ocupa três partes flexíveis da grade (3fr) */
+}
+
+.b-flex:nth-child(2){
+    order: 2;
+    flex: 10;
+}
+
+.b-flex:nth-child(5){
+    order: 3;
+    /* pode usar -1 que fica no começo ou 1 que fica no final */
+}
+
+[data-company="COL1"]{
+    background-color: green;
+    /* data-company -> se tiver em mais de 1, entra em todos */
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px ) {
+    .fundo{
+        display: none;
+    }
+    /* aplica um estilo específico quando a largura da tela está entre 200 pixels e 700 pixels */
+}
+
+@media screen and (min-width: 200px) and (max-width: 700px ) {
+    table{
+        display: none;
+    }
+    h2{
+        color: blue;
+    }
+}
+
+@media print{
+    .fundo{
+        display: none;
+        /* ao tentar imprimir, a imagem some */
+    }
+}
+
+[data-button="Clique"] {
+    background-color: #0c4684;
+    color: white;
+    border: 1px solid #afcbe9;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    /* muda o ponteiro do mouse */
+    margin: auto;
+    opacity: .7;
+    text-align: center;
+    width: 50%;
+    display: block;
+    /* Define o elemento como um bloco, fazendo com que ele ocupe toda a largura disponível e seja exibido em uma nova linha */
+    transition: all .2s ease-in-out, background-color 1s ease-in-out;
+    /* Define a transição animada para as mudanças de propriedades ao longo do tempo. A propriedade all .2s ease-in-out indica que todas as propriedades devem ter uma duração de transição de 0.2 segundos com uma curva de aceleração suave. Além disso, a propriedade background-color 1s ease-in-out especifica uma transição suave para a propriedade background-color com uma duração de 1 segundo e uma curva de aceleração suave */
+}
+
+[data-button="Clique"]:hover {
+    transform: scale(1.6) rotate(5deg) translateY(-10px);
+    /* transform: scale(1.6): Aumenta o elemento em 1.6 vezes o seu tamanho original
+    rotate(5deg): Rotaciona o elemento em 5 graus no sentido horário
+    translateY(-10px): Move o elemento verticalmente para cima (-10 pixels) em relação à sua posição original */
+    color: #0c4684;
+    background-color: #bababa;
+}
+
+[data-button2="botao2"] {
+    background-color: #0c4684;
+    color: white;
+    border: 1px solid #afcbe9;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    margin: auto;
+    opacity: .7;
+    text-align: center;
+    width: 50%;
+    display: block;
+    animation: pulse .8s infinite;
+    animation-direction: alternate;
+    transform: scale(1);
+}
+
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    /* 50%{
+        transform: scale(1.2);
+        opacity: .6;
+    } */
+    100%{
+        transform: scale(1.2);
+        opacity: .6;
+    }
+}

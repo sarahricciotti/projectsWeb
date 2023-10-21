@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M3Solutions</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style-M3.css">
+
+    <link rel="icon" href="IMAGENS/logotipo_m3.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function openMenu() {
+            var navbar = document.getElementById("navbarResponsive");
+            navbar.classList.toggle("show");
+        }
+    </script>
+</head>
+
+<body>
+
+    <!-- inicio nav -->
+    <nav class="navbar navbar-expand-md bg-nav-footer">
+        <div class="container">
+            <a href="">
+                <img src="IMAGENS/logo_M3.png" alt="">
+            </a>
+
+            <button class="navbar-toggler bg-light bg-opacity-25 data-toggle=" collapse" data-target="#navbarResponsive"
+                onclick="openMenu()">
+                <span class="navbar-toggler-icon text-light"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="">Sobre</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Serviços</a>
+
+                        <ul class="dropdown-menu one" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="nav-link"><a class="dropdown-item dropdown-toggle">Segurança Digital</a>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Segurança Corporativa</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Analise de vulnerabilidade</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">PenTest</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item dropdown-toggle">Infraestrutura</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Cabeamento Estruturamento</a>
+                                    </li>
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Voip</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item dropdown-toggle">Desenvolvimento Web</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Criação de sites</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Otimização de SEO</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Hospedagem de sites</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Desenvolvimento de sistemas</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Marketing Digital</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item dropdown-toggle">Serviço Técnico</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Suporte Especializado</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Consultoria de TI</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item dropdown-toggle">Cloud</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Amazon Web Services</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Microsoft Azure</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">IBM Softlayer</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Produtos</a>
+
+                        <ul class="dropdown-menu">
+                            <li class="nav-link">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Antivirus</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Bitdefender</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Sophos</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="nav-link dropdown-item dropdown-toggle" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Licença Microsoft</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Microsoft Office 365</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Exchange Online</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Windows Server</a>
+                                    </li>
+
+                                    <li class="nav-link">
+                                        <a class="dropdown-item" href="">Windows Pro</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item" href="">Adobe Creative Cloud</a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item" href="">Criptografia</a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item" href="">Firewall</a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item" href="">Cloud</a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item" href="">Certificado SSL</a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item" href="">Corel Draw</a>
+                            </li>
+
+                            <li class="nav-link">
+                                <a class="dropdown-item" href="">AutoCad</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" target="_blank" rel="noopener"
+                            href="https://blog.m3solutions.com.br">Blog</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link text-light" href="/emconstrucao" target="_blank">Banco de Talentos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fim nav -->
+
+    <main>
+        <!-- serviços -->
+        <section class="fundoInicioM3 mb-5 sectionService">
+            <div class="container">
+                <div class="row cardInicio p-5">
+                    <p class="text-light text-center text-uppercase mb-5 display-4">principais serviços</p>
+
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card bg-dark text-light cardServico">
+                            <a href="" class="imagemCard1">
+                                <img src="IMAGENS/ciberseguranca2.png" class="card-img-top" alt="...">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Segurança Digital</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card bg-dark text-light cardServico">
+                            <a href="" class="imagemCard2">
+                                <img src="IMAGENS/suporte2.png" class="card-img-top" alt="..." width="180px">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Suporte em T.I</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 d-flex justify-content-center">
+                        <div class="card bg-dark text-light cardServico">
+                            <a href="" class="imagemCard3">
+                                <img src="IMAGENS/desenvolvimento2.png" class="card-img-top" alt="..." width="180px">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text">Desenvolvimento de Software</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- serviços -->
+
+        <!-- somos -->
+        <section class="bg-secondary bg-opacity-25 mb-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div>
+                            <h4 class="text-uppercase">
+                                <span class="text-decoration-underline">Somos</span> a
+                                <span class="tituloM3">M3Solutions</span>
+                            </h4>
+                            <p class="fs-5">
+                                Não medimos esforços para estar o mais próximo possível das melhores tecnologias do
+                                mercado. Afim de oferecer aos nossos clientes um atendimento composto por um time
+                                apaixonado por
+                                tecnologia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <img src="IMAGENS/logotipo_m3.png" alt="" class="img-fluid w-75">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- somos -->
+
+        <!-- cartões -->
+        <section class="mb-5 sectionCartoes">
+            <div class="container cardsM3">
+                <h3 class="text-center text-uppercase">Mais de nossos <span
+                        class="tituloM3 text-decoration-underline">serviços</span></h3>
+
+                <div class="row w-75 m-auto gx-2 gy-3">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="IMAGENS/consultoria.png" alt="" class="card-img-top" width="200px">
+                            <div class="card-body pb-1">
+                                <p class="card-text">Consultoria em TI</p>
+                                <a href="">
+                                    <button class="btn btn-outline-primary btn-sm">Saiba mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="IMAGENS/SEO.png" alt="" class="card-img-top" width="200px">
+                            <div class="card-body pb-1">
+                                <p class="card-text">Otimização SEO</p>
+                                <a href="">
+                                    <button class="btn btn-outline-primary btn-sm">Saiba mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="IMAGENS/cabeamento.png" alt="" class="card-img-top" width="200px">
+                            <div class="card-body pb-1">
+                                <p class="card-text">Cabeamento</p>
+                                <a href="">
+                                    <button class="btn btn-outline-primary btn-sm">Saiba mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="IMAGENS/ciberseguranca.png" alt="" class="card-img-top" width="200px">
+                            <div class="card-body pb-1">
+                                <p class="card-text">Ciberseguranca</p>
+                                <a href="">
+                                    <button class="btn btn-outline-primary btn-sm">Saiba mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row w-75 m-auto gx-2 gy-3">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="IMAGENS/desenvolvimento.png" alt="" class="card-img-top" width="200px">
+                            <div class="card-body pb-1">
+                                <p class="card-text">Desenvolvimento Web</p>
+                                <a href="">
+                                    <button class="btn btn-outline-primary btn-sm">Saiba mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="IMAGENS/hospedagem.png" alt="" class="card-img-top" width="200px">
+                            <div class="card-body pb-1">
+                                <p class="card-text">Hospedagem de Sites</p>
+                                <a href="">
+                                    <button class="btn btn-outline-primary btn-sm">Saiba mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="IMAGENS/suporte.png" alt="" class="card-img-top" width="200px">
+                            <div class="card-body pb-1">
+                                <p>Suporte de TI</p>
+                                <a href="">
+                                    <button class="btn btn-outline-primary btn-sm">Saiba mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-3">
+                        <div class="card">
+                            <img src="IMAGENS/cloud.jpg" alt="" class="card-img-top" width="200px">
+                            <div class="card-body pb-1">
+                                <p>Serviços Cloud</p>
+                                <a href="">
+                                    <button class="btn btn-outline-primary btn-sm">Saiba mais</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cartões -->
+
+        <!-- produtos -->
+        <section class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-center text-uppercase">Nossos <span class="tituloM3">Produtos</span></h3>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center">
+                    <div class="col-6 col-md-4 col-lg-2  boxProdutos">
+                        <div class="img_box">
+                            <a href="">
+                                <img class="imgprodutos" src="IMAGENS/office.png" alt="Office365">
+                                <p>Microsoft Office365</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 boxProdutos">
+                        <div class="img_box">
+                            <a href="">
+                                <img class="imgprodutos" src="IMAGENS/bit.png" alt="Bitdefender">
+                                <p>Antivírus Bitdefender</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 boxProdutos">
+                        <div class="img_box">
+                            <a href="">
+                                <img class="imgprodutos" src="IMAGENS/adobe.png" alt="Adobe">
+                                <p>Adobe Creative</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 boxProdutos">
+                        <div class="img_box">
+                            <a href="">
+                                <img class="imgprodutos" src="IMAGENS/sophos.png" alt="Firewall">
+                                <p>Firewall Sophos UTM</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 boxProdutos">
+                        <div class="img_box">
+                            <a href="">
+                                <img class="imgprodutos" src="IMAGENS/ssl.png" alt="Cerificado SSl">
+                                <p>Certificado SSL</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-2 boxProdutos">
+                        <div class="img_box">
+                            <a href="">
+                                <img class="imgprodutos" src="IMAGENS/criptografia.png" alt="Criptografia">
+                                <p>SafeGuard Encryption</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- produtos -->
+
+        <!-- trabalhamos -->
+        <section class="bg-secondary bg-opacity-25 mb-5">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col-md-4">
+                        <img src="IMAGENS/parceria.png" alt="" class="img-fluid w-75">
+                    </div>
+
+                    <div class="col-md-8 d-flex align-items-center">
+                        <div>
+                            <h4 class="text-uppercase">Trabalhamos com as <span class="tituloM3">maiores
+                                    fabricantes</span></h4>
+                            <p class="fs-5">
+                                Temos parcerias com empresas consideradas ícones no mercado. Possibilitando descontos
+                                exclusivos e condições especiais de pagamento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- trabalhamos -->
+
+        <!-- regioes -->
+        <section class="mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="text-center text-uppercase">regiões de <span class="tituloM3">atendimento</span></h3>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 regiao">
+                        <div class="image-scale">
+                            <img src="IMAGENS/cidade.jpg" alt="São Paulo" class="img-fluid">
+                            <div class="sombra"></div>
+                            <div class="text-up">
+                                <h4>São Paulo</h4>
+                                <p>(11) 4063-9468</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 regiao">
+                        <div class="image-scale">
+                            <img src="IMAGENS/cidade.jpg" alt="São Paulo" class="img-fluid">
+                            <div class="sombra"></div>
+                            <div class="text-up">
+                                <h4>Baixada Santista</h4>
+                                <p>(13) 4062-9562</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 regiao">
+                        <div class="image-scale">
+                            <img src="IMAGENS/cidade.jpg" alt="São Paulo" class="img-fluid">
+                            <div class="sombra"></div>
+                            <div class="text-up">
+                                <h4>Rio de Janeiro</h4>
+                                <p>(21) 4063-9685</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 regiao">
+                        <div class="image-scale">
+                            <img src="IMAGENS/cidade.jpg" alt="São Paulo" class="img-fluid">
+                            <div class="sombra"></div>
+                            <div class="text-up">
+                                <h4>Minas Gerais</h4>
+                                <p>(31) 4063-9108</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-6 col-lg-3 regiao">
+                        <div class="image-scale">
+                            <img src="IMAGENS/cidade.jpg" alt="São Paulo" class="img-fluid">
+                            <div class="sombra"></div>
+                            <div class="text-up">
+                                <h4>Paraná</h4>
+                                <p>(41) 4063-9289</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 regiao">
+                        <div class="image-scale">
+                            <img src="IMAGENS/cidade.jpg" alt="São Paulo" class="img-fluid">
+                            <div class="sombra"></div>
+                            <div class="text-up">
+                                <h4>Rio Grande do Sul</h4>
+                                <p>(61) 3550-8990</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 regiao">
+                        <div class="image-scale">
+                            <img src="IMAGENS/cidade.jpg" alt="São Paulo" class="img-fluid">
+                            <div class="sombra"></div>
+                            <div class="text-up">
+                                <h4>Goiás</h4>
+                                <p>(61) 3550-8990</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-lg-3 regiao">
+                        <div class="image-scale">
+                            <img src="IMAGENS/cidade.jpg" alt="São Paulo" class="img-fluid">
+                            <div class="sombra"></div>
+                            <div class="text-up">
+                                <h4>Bahia</h4>
+                                <p>(71) 3838-9999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- regioes -->
+
+        <!-- contato -->
+        <section class="bg-secondary bg-opacity-10 p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 p-5 d-flex align-items-center">
+                        <div>
+                            <h1 class="text-uppercase">faça sua <span class="tituloM3">cotação</span></h1>
+                            <br>
+                            <p class="fs-4">Nós garantimos as melhores soluções em segurança cibernética do mercado.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 bg-secondary p-3 text-light">
+                        <h3 class="text-center text-uppercase mb-3">Contato</h3>
+                        <form action="" class="row">
+                            <div class="col-md-7 mb-2">
+                                <label for="nomeContato" class="form-label">Nome</label>
+                                <input type="text" class="form-control form-control-sm" id="nomeContato" required
+                                    placeholder="Digite seu nome">
+                            </div>
+
+                            <div class="col-md-5 mb-2">
+                                <label for="telContato" class="form-label">Telefone</label>
+                                <input type="text" class="form-control form-control-sm" id="telContato" required
+                                    placeholder="Digite seu telefone">
+                            </div>
+
+                            <div class="col-12 mb-2">
+                                <label for="emailContato" class="form-label">E-mail</label>
+                                <input type="email" class="form-control form-control-sm" id="emailContato" required
+                                    placeholder="Digite seu e-mail">
+                            </div>
+
+                            <div class="col-7 mb-2">
+                                <label for="empresaContato" class="form-label">Empresa</label>
+                                <input type="text" class="form-control form-control-sm" id="empresaContato" required
+                                    placeholder="Informe sua empresa">
+                            </div>
+
+                            <div class="col-5 mb-2">
+                                <label for="estadoContato" class="form-label">Estado</label>
+                                <input type="text" class="form-control form-control-sm" id="estadoContato" required
+                                    placeholder="Informe o estado da empresa">
+                            </div>
+
+
+                            <div class="col-12 mb-2">
+                                <label for="mensagemContato" class="form-label">Mensagem</label>
+                                <textarea class="form-control form-control-sm" id="mensagemContato" rows="3"></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="g-recaptcha" data-sitekey="6LdzU2IUAAAAAIASvK78yGnEFVyuv2ell4jwPGJD">
+                                    <div style="width: 304px; height: 78px;">
+                                        <div>
+                                            <iframe title="reCAPTCHA"
+                                                src="https://www.google.com/recaptcha/api2/anchor?ar=2&amp;k=6LdzU2IUAAAAAIASvK78yGnEFVyuv2ell4jwPGJD&amp;co=aHR0cHM6Ly93d3cubTNzb2x1dGlvbnMuY29tLmJyOjQ0Mw..&amp;hl=pt-BR&amp;v=uEf7E1417z6GNSkRx7AyL8K8&amp;size=normal&amp;cb=mmfgofaw9wg9"
+                                                width="304" height="78" role="presentation" name="a-a84vataxa1c"
+                                                frameborder="0" scrolling="no"
+                                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation">
+                                            </iframe>
+                                        </div>
+                                        <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                            class="g-recaptcha-response"
+                                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                    </div>
+                                    <iframe style="display: none;"></iframe>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contato -->
+    </main>
+
+    <!-- footer -->
+    <footer class="py-5 bg-nav-footer">
+        <div class="container">
+            <div id="footer-widgets" class="container style-1" style="font-size: 14px;">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-4">
+                        <div class="widget widget_text col-lg-11">
+                            <div class="textwidget">
+                                <a href="index" title="Logo">
+                                    <img src="IMAGENS/logo_M3.png" alt="Logo" title="Logo">
+                                </a>
+                                <p style="text-align: justify;">Buscamos novas experiências e produtos no mercado,
+                                    sempre de olho nas novidades do mundo tecnológico, para inovar com qualidade e
+                                    expertise em todos os serviços e produtos ofertados.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-2">
+                        <div class="widget widget_links">
+                            <h2 class="widget-title"><span>Serviços</span></h2>
+                            <a href="">
+                                <p>Segurança Digital</p>
+                            </a>
+                            <a href="">
+                                <p>Infraestrutura</p>
+                            </a>
+                            <a href="">
+                                <p>Desenvolvimento Web</p>
+                            </a>
+                            <a href="">
+                                <p>Suporte Técnico</p>
+                            </a>
+                            <a href="">
+                                <p>Cloud</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-2">
+                        <div class="widget widget_links">
+                            <h2 class="widget-title"><span>Produtos</span></h2>
+                            <a href="">
+                                <p>Certificado SSL</p>
+                            </a>
+                            <a href="">
+                                <p>Antivirus</p>
+                            </a>
+                            <a href="">
+                                <p>Criptografia</p>
+                            </a>
+                            <a href="">
+                                <p>Firewall</p>
+                            </a>
+                            <a href="">
+                                <p>Licença Adobe</p>
+                            </a>
+                            <a href="">
+                                <p>Licença Microsoft</p>
+                            </a>
+                            <a href="">
+                                <p>Corel Draw</p>
+                            </a>
+                            <a href="">
+                                <p>AutoCad</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-5 col-md-5 col-lg-4">
+                        <div class="widget widget_information">
+                            <h2 class="widget-title"><span>Contatos</span></h2>
+                            <b>Telefone:</b><br>
+                            <ul aria-labelledby="phone">
+                                <li class="phone clearfix">
+                                    <b>(11) 4063-9468 &nbsp; (13) 4062-9562
+                                        <br>
+                                        (21) 4063-9685 &nbsp; (31) 4063-9108
+                                        <br>
+                                        (41) 4063-9289 &nbsp; (51) 4063-9108
+                                        <br>
+                                        (61) 3550-8999 &nbsp; (71) 3838-9999
+                                    </b>
+                                </li>
+                            </ul>
+
+                            <b id="contato-email">E-mail:</b>
+                            <ul aria-labelledby="contato-email">
+                                <li class="email clearfix">
+                                    <b>comercial@m3solutions.com.br</b>
+                                </li>
+                            </ul>
+                            <br>
+                            <div class="fs-5">
+                                <a title="Facebook" rel="noopener" class="social px-2 icon-link icon-link-hover"
+                                    target="_blank" href="https://www.facebook.com/M3Solutions.com.br">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a title="Google +" rel="noopener" class="social px-2 icon-link icon-link-hover"
+                                    target="_blank" href="https://plus.google.com/+M3solutionsBr">
+                                    <i class="bi bi-google"></i>
+                                </a>
+                                <a title="Twitter" rel="noopener" class="social px-2 icon-link icon-link-hover"
+                                    target="_blank" href="https://twitter.com/M3Solutions_br">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                                <a title="Instagram" rel="noopener" class="social px-2 icon-link icon-link-hover"
+                                    target="_blank" href="">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+</body>
+
+</html>

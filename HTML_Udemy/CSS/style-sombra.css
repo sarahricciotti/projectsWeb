@@ -1,0 +1,17 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    background: #009670;
+    border-radius: 10px 30px 50px 70px;
+    box-sizing: border-box;
+    box-shadow: 8px 7px 3px rgba(0, 0, 0, 0.8);
+    /* cria uma sombra ao redor do elemento. Os valores usados especificam a posição horizontal (8px), a posição vertical (7px), o desfoque (3px) e a cor da sombra (rgba(0, 0, 0, 0.8)). Nesse caso, a sombra será preta com uma opacidade de 0,8. */
+}
+
+#caixa h1{
+    color: white;
+    text-shadow: 8px 7px 3px rgba(0, 0, 0, 0.8);
+    /*  Define uma sombra para o texto. Os valores usados são semelhantes à propriedade box-shadow, onde são especificadas a posição horizontal (8px), a posição vertical (7px), o desfoque (3px) e a cor da sombra (rgba(0, 0, 0, 0.8)). Nesse caso, a sombra do texto também será preta com uma opacidade de 0,8. */
+}

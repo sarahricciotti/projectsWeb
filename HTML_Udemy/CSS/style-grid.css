@@ -1,0 +1,69 @@
+.container{
+    min-height: 100vh; /* Alterei para min-height para garantir que o container tenha pelo menos a altura total da página */
+    display: grid;
+    width: 80%;
+    margin: auto;
+}
+
+main{
+    grid-area: title;
+    border-right: 1px solid #b5b2b2;
+}
+
+aside{
+    grid-area: aside;
+    margin-left: 15px;
+}
+
+footer{
+    grid-area: footer;
+    align-self: end; /* Adicionei esta propriedade para alinhar o footer no final do container */
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        display: grid;
+        grid-template-areas: 
+        ". title aside aside ."
+        ". title aside aside ."
+        ". title aside aside ."
+        ". footer footer footer .";
+        /* grade de 4 linhas e 5 colunas. Os pontos (.) representam células vazias na grade */
+    }
+}
+
+.container h1 p + p{
+    color: #52b69a;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+input{
+    width: 80%;
+    padding: 5px;
+    margin: 5px;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+}
+
+.rodape{
+    background-color: #52b69a;
+    height: 10vh;
+    text-align: center;
+}
+
+button{
+    background-color: #52b69a;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+    border: none;
+}

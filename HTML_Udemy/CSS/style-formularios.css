@@ -1,0 +1,45 @@
+body{
+    background-color: #E6EBEA;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+}
+
+label{
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+}
+
+input{
+    width: 20em;
+}
+
+fieldset{
+    padding: 1em;
+    margin: 5px 0;
+}
+
+legend{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+textarea{
+    width: 20em;
+    height: 10em;
+}
+
+input.radio{
+   width: auto; 
+}
+
+input.enviar{
+    width: auto; 
+ }
+
+ #container{
+    width: 85%;
+    margin: 0 auto;
+    min-width: 720px;
+    max-width: 1000px;
+ }

@@ -1,0 +1,41 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    border-radius: 10px 30px 50px 70px;
+    text-align: center;
+    box-sizing: border-box;
+    /* mesmo com o PADDING, não deixa a caixa ultrapassar o a largura definida */
+}
+
+#caixa2{
+    width: 320px;
+    height: 320px;
+    background: #b9c941;
+    border-radius: 10px 30px 50px 70px;
+    text-align: center;
+}
+
+#caixa3{
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(95deg, red, blue, purple);
+    /* to left | radial-gradient */
+    padding: 10px;
+    border-radius: 10px 30px 50px 70px;
+    text-align: center;
+    box-sizing: border-box;
+    /* mesmo com o PADDING, não deixa a caixa ultrapassar o a largura definida */
+}
+
+#caixa3 h1{
+    background: rgb(151, 10, 29);
+}
+
+.rounding{
+    -webkit-border-radius: 20px 60px;
+    -moz-border-radius: 20px 60px;
+    /* versões antigas */
+    border-radius: 20px 60px;
+}

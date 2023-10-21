@@ -1,0 +1,17 @@
+#caixa{
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+    margin: 20px;
+    background: #009670;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 160px;
+}
+
+#caixa:hover {
+    width: 350px;
+    background: #8fe6d0;
+    /* transition: width 2s, background 2s; */
+    transition: all 2s;
+}

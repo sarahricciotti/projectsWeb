@@ -1,0 +1,84 @@
+@keyframes animacao-caixa {
+    from {
+        background:url(https://onlinequadros.com.br/static/acc/artist/ART-25657/gallery/85579/ART-25657_RB6r8ck6Y2R7WzzTpq0U.jpg);
+        margin-top: -15px;
+        left: 25px;
+    }
+    to {
+        color: none;
+        opacity: 0.1;
+        margin-top: -15px;
+        left: 1120px;
+    }
+}
+
+body {
+    background-color: #000;
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Victor Mono', monospace;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    height: 83vh;
+}
+
+#cards {
+    display: flex;
+    margin-top: 100px;
+    flex-direction: row;
+}
+
+.card {
+    font-size: 35px;
+    border-radius: 20px;
+    margin: 0 5px 0 5px;
+    height: 100px;
+    background-color: #fff;
+    flex: 1;
+    transition: .3seg all ease;
+    text-align: center;
+    line-height: 100px;
+}
+
+.card:hover {
+    flex: 2;
+    background-color: rgb(207, 207, 207);
+    color: #36010d;
+    font-size: 45px;
+}
+
+h1 {
+    margin-top: 70px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.caixa{
+    margin-top: -15px;
+    margin-left: 235px;
+    width: 850px;
+    height: 400px;
+    padding: 10px;
+    position: fixed;
+    background: url(https://onlinequadros.com.br/static/acc/artist/ART-25657/gallery/85579/ART-25657_RB6r8ck6Y2R7WzzTpq0U.jpg);
+    text-align: center;
+    line-height: 330px;
+    animation: animacao-caixa 4s 1s 4 alternate;
+
+}
+
+footer{
+    background-color: white;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}

@@ -1,0 +1,199 @@
+* {
+    list-style: none;
+    font-size: 62.5%;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background: #f4f2ec url(../IMAGENS/fundo-museu.png) repeat-x;
+    font-size: 8rem;
+}
+
+header{
+    padding: 1.5rem 0;
+    height: 5.5rem;
+}
+
+aside{
+    width: 35rem;
+    background: #ebe7dd;
+    float: right;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+}
+
+a:link, a:active, a:visited{
+    color: #af670a;
+}
+
+a:hover{
+    color: #227115;
+}
+
+#container {
+    width: 108rem;
+    margin: 0 auto;
+}
+
+.logo h1{
+    float: left;
+}
+
+.logo a{
+    width: 24.8rem;
+    height: 2.1rem;
+    text-indent: -99999rem;
+    display: block;
+    background: url(../IMAGENS/logo-museu.png) no-repeat;
+}
+
+nav ul{
+    float: right;
+    margin: 2rem;
+}
+
+nav ul li{
+    float: left;
+    /* padding: 0 2rem; */
+    font-size: 3rem;
+}
+
+nav ul li a:link{
+    display: block;
+    margin-right: 2.5rem;
+    padding-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid #525858;
+}
+
+div.conteudos{
+    width: 71rem;
+    float: left;
+    margin-bottom: 2rem;
+}
+
+h4{
+    font-size: 2rem;
+    color: #86521a;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+h3{
+    font-size: 1.8rem;
+    color: #227115;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+section.visita{
+    background: #cdc8b1;
+    padding: 1rem 2.7rem 2.7rem 2.7rem;
+    margin-top: 1rem;
+}
+
+.visita fieldset{
+    font-size: 2.2rem;
+}
+
+input{
+    height: 2rem;
+    background: white;
+    border: none;
+    font-size: 1rem;
+    width: 8rem;
+}
+
+input.campo{
+    border: 1px solid gray;
+}
+
+input.submit{
+    font-size: 1.3rem;
+    margin-top: 0.6rem;
+    background: #9b9271;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    height: 3rem;
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    display: none;
+}
+
+section.galeria{
+    padding: 0 2.7rem 0 2.7rem;
+}
+
+section.galeria a{
+    display: block;
+    background: url(../IMAGENS/fundo-foto-museu.png) no-repeat;
+    float: left;
+    padding: 1.7rem 1.5rem;
+    margin: 1rem 0 0 1.2rem;
+}
+
+article ul li{
+    padding: 0.3rem;
+}
+
+article ul li a{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+strong{
+    font-size: 2rem;
+}
+
+article.video{
+    float: left;
+    width: 31rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+article.mapa{
+    float: right;
+    width: 31rem;
+    margin-left: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+article.exposicoes{
+    float: left;
+    width: 31rem;
+    margin-left: 2.5rem;
+}
+
+article.historia{
+    float: right;
+    width: 31rem;
+    margin-left: 2.5rem;
+}
+
+footer{
+    padding: 2rem 0 3rem 0;
+    text-align: center;
+    background: url(../IMAGENS/fundo-rodape-museu.png) no-repeat center top;
+}
+
+footer>p a{
+    padding: 1rem;
+    font-size: 1.5rem;
+}

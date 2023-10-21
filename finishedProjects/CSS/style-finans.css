@@ -1,0 +1,18 @@
+nav ul li a:hover{
+    background-color: #fff;
+    color: #1b2944 !important;
+}
+
+.bg-nav{
+    background-color: #1b2944;
+    color: #fff;
+    opacity: .8;
+}
+
+#home{
+    background-image: url(../IMAGENS/bg-money.jpg);
+}
+
+footer p a{
+    text-decoration: none;
+}

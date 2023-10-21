@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+
+    <link rel="stylesheet" type="text/css" href="CSS/style-formularios.css">
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h2>ESTILIZANDO FORMULARIOS</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>Dados</legend>
+
+                <div>
+                    <label for="nome">Nome completo:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Escreva seu nome completo">
+                </div>
+
+                <div>
+                    <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com">
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                        <input type="tel" name="telefone" id="telefone" placeholder="(DDD) Numero">
+                </div>
+
+                <div>
+                    <label for="data">Data Nascimento:</label>
+                        <input type="date" name="nascimento" id="data">
+                </div>
+
+                <div>
+                    <label for="hora">Hora Nascimento:</label>
+                        <input type="time" name="hora" id="hora">
+                </div>
+
+                <div>
+                    <label for="number">Numero Preferido:</label>
+                        <input type="number" name="number" id="number">
+                </div>
+
+                <div>
+                    <label for="arquivo">Carregue PDF do RG:</label>
+                        <input type="file" name="arquivo" id="arquivo">
+                </div>
+
+                <div>
+                    <label for="cor">Cor Preferida:</label>
+                        <input type="color" name="cor" id="cor">
+                </div>
+
+                <div>
+                    <label for="range">Avalie o site:</label>
+                        <input type="range" name="range" id="range">
+                </div>
+
+            </fieldset>
+
+            <br>
+
+            <fieldset>
+
+                <legend>Mensagem</legend>
+
+                <div>
+                    <label for="mensagem">Escreva sua reclamção:</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Voltaria a usar o site?</legend>
+
+                <div>
+                    <label>
+                        <input type="radio" name="pergunta" id="sim" class="radio">Sim
+                    </label>
+                </div>
+
+                <div>
+                    <label>
+                        <input type="radio" name="pergunta" id="nao" class="radio">Nao
+                    </label>
+                </div>
+                <!-- type="reset" limpa tudo -->
+
+            </fieldset>
+
+            <br>
+
+            <input type="submit" class="enviar" value="Enviar formulário">
+
+        </form>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+
+    <style>
+        @keyframes rotate1 {
+            0% {
+                transform: rotateZ(0deg) rotateX(0deg);
+            }
+
+            100% {
+                transform: rotateZ(360deg) rotateX(360deg);
+            }
+        }
+
+        @keyframes rotate2 {
+            0% {
+                transform: rotateX(0deg) rotateZ(0deg);
+            }
+
+            100% {
+                transform: rotateX(360deg) rotateZ(360deg);
+            }
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+
+        #container {
+            width: 500px;
+            margin: 50px auto 0 auto;
+        }
+
+        p{
+            float: left;
+            margin-top: 85px;
+            margin-left: 80px;
+        }
+
+        .ring {
+            margin-left: 10px;
+            width: 200px;
+            height: 200px;
+            border: 0px solid #000;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .ring:nth-child(1) {
+            border-bottom-width: 8px;
+            border-color: rgb(255, 255, 255);
+            animation: rotate1 2s linear infinite;
+        }
+
+        .ring:nth-child(2) {
+            border-left-width: 8px;
+            border-color: rgb(228, 42, 42);
+            animation: rotate2 2s linear infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <p>Loading...</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+@keyframes pulsar {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 6000px;
+    }
+}
+
+@media (min-width: 768px) {
+    .cardServico{
+        width: 80%;
+    }
+}
+
+@media (min-width: 768px) {
+    .sectionService{
+        padding: 5rem;
+    }
+}
+
+.fundoInicioM3 {
+    background-image: url(IMAGENS/bg-M3-inicio.png);
+    background-size: 100% auto;
+    animation: pulsar 120s infinite linear;
+}
+
+.bg-nav-footer {
+    background-color: #0c1f38;
+    color: #fff !important;
+}
+
+/* navegação - menu */
+.dropdown-menu .dropdown-menu {
+    display: none;
+    position: absolute;
+    min-width: 10rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: #cfcaca;
+    opacity: .9;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-menu li.nav-link:hover>.dropdown-menu {
+    display: block;
+    position: absolute;
+}
+
+nav ul li {
+    font-size: 0.9rem;
+}
+
+.navbar-toggler {
+    color: white !important;
+  }
+/* navegação - menu */
+
+.card-body {
+    padding: 8px;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.tituloM3 {
+    color: #045f75;
+}
+
+/* :hover serviços*/
+.imagemCard1 {
+    display: inline-block;
+    position: relative;
+}
+
+.imagemCard1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(IMAGENS/hover1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagemCard1:hover::before {
+    opacity: 1;
+    background-image: url(IMAGENS/hover1.png);
+}
+
+.imagemCard2 {
+    display: inline-block;
+    position: relative;
+}
+
+.imagemCard2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(IMAGENS/hover2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagemCard2:hover::before {
+    opacity: 1;
+    background-image: url(IMAGENS/hover2.png);
+}
+
+.imagemCard3 {
+    display: inline-block;
+    position: relative;
+}
+
+.imagemCard3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(IMAGENS/hover3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagemCard3:hover::before {
+    opacity: 1;
+    background-image: url(IMAGENS/hover3.png);
+}
+/* :hover serviços*/
+
+.sectionCartoes{
+    border-bottom: 2px solid #dcdcdc;
+    padding-bottom: 2rem;
+}
+
+/* produtos */
+.boxProdutos{
+    display: flex;
+    justify-content: center;
+    width: 13rem;
+}
+
+.imgprodutos{
+    width: 7rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.img_box{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    padding-top: 0.8rem;
+}
+
+.img_box:hover{
+    background-color: #f0eded;
+}
+
+.img_box a p{
+    color: #000;
+}
+/* produtos */
+
+/* região */
+.regiao{
+    display: flex;
+    justify-content: center;
+}
+
+.image-scale {
+	position: relative;
+    overflow: hidden;
+	margin-bottom: 2rem;
+    border: 1px solid;
+    width: 85%;
+}
+
+.image-scale:hover img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1)
+}
+
+.image-scale img,
+.image-scale:hover img,
+.text-up,
+.regiao:hover .text-up {
+	-webkit-transition: all 2s cubic-bezier(.23, 1, .32, 1);
+	-o-transition: all 2s cubic-bezier(.23, 1, .32, 1);
+	transition: all 2s cubic-bezier(.23, 1, .32, 1);
+	width: 100%;
+	max-height: 150px
+}
+
+.image-scale img {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1)
+}
+
+.text-up {
+	position: absolute;
+	top: 30px;
+	width: calc(100% - 50px);
+	height: 50%;
+	color: #fff;
+}
+
+.regiao:hover .text-up {
+	margin-top: -20px
+}
+
+.sombra {
+	position: absolute;
+	background-color: #000;
+	opacity: .65;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	overflow: hidden
+}
+/* região */
+
+footer a {
+    color: #fff;
+}

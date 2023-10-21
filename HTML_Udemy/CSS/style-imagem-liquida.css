@@ -1,0 +1,78 @@
+body{
+    background-color: #EEEAEE;
+}
+
+#container{
+    width: 85%;
+    margin: 0 auto;
+    background: #E4E3E4;
+    min-width: 720px;
+    max-width: 1000px;
+    /*max-height: ;*/
+}
+
+#marca{
+    height: 300px;
+    background: #392739 url(../IMAGENS/marca.jpg);
+    text-align: center;
+    line-height: 300px;
+    color: white;
+}
+
+#conteudo{
+    width: 74%;
+    float: right;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#navegacao{
+    width: 23%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #959095;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#rodape{
+    clear: both;
+    color: #392739;
+    background: #959095;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+}
+
+#cont-principal{
+    width: 62%;
+    float: left;
+    background: #D7D5D7;
+}
+
+#cont-secundario{
+    width: 33%;
+    float: right;
+    background: #D7D5D7;
+}
+
+#navegacao ul{
+    list-style-type: none;
+}
+
+#navegacao li a{
+    text-decoration: none;
+}
+
+#cont-secundario h2,
+#cont-secundario p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+img.img-conteudo{
+    width: 94%;
+    padding: 2%;
+    max-width: 740px;
+}

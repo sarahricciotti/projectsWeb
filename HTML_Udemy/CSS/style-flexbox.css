@@ -1,0 +1,79 @@
+body{
+    background-color: #fcfcfcea;
+}
+
+#conteudo{
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    /* row | row-reverse | column | column-reverse */
+    flex-wrap: nowrap;
+    /* nowrap | wrap | wrap-reverse */
+    justify-content: center;
+    /* flex-start- alinhados no início | (flex-direction: row) são alinhados à esquerda | (flex-direction: column) são alinhados ao topo
+    flex-end- alinhados no final | (flex-direction: row) são alinhados à direita | (flex-direction: column) são alinhados na parte inferior
+    center- centralizados horizontalmente
+    space-between- distribuídos ao longo do eixo principal, 1° item no início e o último item no final, e o espaço restante é distribuído igualmente
+    space-around- distribuídos ao longo do eixo principal com espaços iguais em torno deles. Significa que há espaçamento adicional tanto no início quanto no final, e também entre os itens
+    space-evenly- distribuídos ao longo do eixo principal com espaços iguais entre eles, incluindo os espaços no início e no final */
+    align-items: baseline;
+    /* flex-start- alinhados no início | (flex-direction: row) são alinhados no topo | (flex-direction: column) são alinhados à esquerda
+    flex-end- alinhados no final | (flex-direction: row) são alinhados na parte inferior | (flex-direction: column) são alinhados à direita
+    center- centralizados verticalmente
+    baseline- alinhados ao longo da linha de base (a linha imaginária onde o texto é alinhado)
+    stretch- esticados ao longo do eixo transversal para preencher o contêiner (configuração padrão) */
+    text-align: center;
+    line-height: 100px;
+}
+
+.item{
+    background: white;
+    border: 1px solid gray;
+    border-radius: 20%;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    /* flex-grow: 1; */
+    /* aumento do item */
+    flex-shrink: 5;
+    /* redução do item */
+    flex-basis: 50%;
+    /* determina o tamanho que o item deve ocupar ao longo do eixo */
+}
+
+.item1{
+    background: white;
+    border: 1px solid gray;
+    border-radius: 20%;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    flex-grow: 1;
+}
+
+.item2{
+    background: white;
+    border: 1px solid gray;
+    border-radius: 20%;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    flex-grow: 2;
+}
+
+.ordem1{
+    order: 1;
+}
+
+.ordem2{
+    order: 2;
+}
+
+.ordem3{
+    order: 3;
+}
+
+.ordem4{
+    order: 4;
+}

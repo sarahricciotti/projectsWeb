@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: o;
+}
+
+body{
+    background-color: #020A32;
+    font-size: 62.5%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+main{
+    grid-area: main;
+    position: absolute;
+    left: 930px;
+    top: 200px;
+}
+
+aside{
+    grid-area: aside;
+}
+
+aside .logo{
+    position: absolute;
+    width: 423px;
+    height: 220px;
+    left: 200px;
+    top: 300px;
+}
+
+input{
+    display: flex;
+    margin-top: 0.7rem;
+    width: 30rem;
+    height: 4rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+main h2{
+    position: absolute;
+    left: 6.5rem;
+    top: -3rem;
+    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+main a{
+    text-decoration: none;
+}
+
+[data-company="button"]{
+    background-color: #FFC90B;
+    border-radius: 0.6rem;
+    margin-top: 1.5rem;
+    width: 30rem;
+    height: 4rem;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
